@@ -1,0 +1,76 @@
+.header {
+    // @apply min-h-screen flex items-center justify-center bg-gray-100;
+    width: 100%;
+    height: 99px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(90deg, rgb(56, 114, 158), rgb(38, 199, 87), rgba(222, 122, 2322, 0.5));
+    // opacity: 50%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    .logo {
+        overflow: hidden;
+    }
+    & .custom-divider {
+        width: 1px;
+        height: 100px;
+        border-left: 1px dashed black;
+        margin: 0 20px 0 0;
+    }
+    & > .container {
+        display: flex;
+        width: 70%;
+        height: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+    }
+    & > .signup_login {
+        width: 20%;
+        height: 100%;
+        display: flex;
+        & > .signup {
+            flex: 1;
+            height: 50%;
+            border: 2px solid red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            & > .signup-achor {
+                text-decoration: none;
+            }
+        }
+        & > .login {
+            flex: 1;
+            height: 50%;
+            border: 2px solid saddlebrown;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            text-decoration: none;
+            & > .login-achor {
+                text-decoration: none;
+            }
+        }
+    }
+    & > .logo {
+        width: 10%;
+        height: 100%;
+    }
+    & .title {
+        font-weight: 600;
+        font-size: 20px;
+        color: #fff;
+        text-decoration: none;
+    }
+    & .help {
+        margin-right: 10%;
+        font-weight: 600;
+        font-size: 20px;
+        color: #fff;
+        text-decoration: none;
+    }
+}
